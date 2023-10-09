@@ -2,7 +2,7 @@ import networkx as nx
 
 graph = nx.DiGraph()
 
-
+#nodes and their neighbors with costs
 graph.add_edge('S', 'A', weight=3)
 graph.add_edge('S', 'B', weight=1)
 graph.add_edge('A', 'S', weight=3)
@@ -20,7 +20,7 @@ graph.add_edge('D', 'G', weight=1)
 graph.add_edge('G', 'C', weight=4)
 graph.add_edge('G', 'D', weight=1)
 
-
+# Heuristics
 heuristics = {
     'S': 7,
     'A': 5,
